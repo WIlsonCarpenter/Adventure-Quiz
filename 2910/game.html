@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	</head>
+	
+	<body>
+	
+		<!-- The home page -->
+		<div data-role='page' id='home'>
+			
+			<!-- The div for the logo -->
+			<div id='logo'>
+				<img src='#' alt='logo'>
+			</div> <!-- /logo -->
+			
+			<!-- The div where all the content is -->
+			<div role="main" class="ui-content">
+				<div id='home-options'>
+					<a href='#play' data-role='button'>Play</a>
+					<a href='#settings' data-role='button'>Settings</a>
+					<a href='#highscore' data-role='button'>Highscore</a>
+				</div> <!-- /home-options-->
+			</div> <!-- /main-->
+			
+		</div> 
+		<!-- End of the home page -->
+		
+		<!-- Once you press play, this is the page that loads -->
+		<div data-role='page' id='play'>
+			
+			<div role="main" class="ui-content">
+				<div id='categories'>
+					<a href='#' data-role='button'>Java</a>
+					<a href='#' data-role='button'>Web Development</a>
+					<a href='#' data-role='button'>Math</a>
+				</div> <!-- categories -->
+			</div> <!-- /main -->
+			
+		</div> 
+		<!-- End of the Play page -->
+		
+		<!-- The game screen -->
+		<div data-role='page' id='game'>
+			
+			<div id='animation'>
+		
+			</div>
+			
+			<div role='main' class='ui-content'>
+				
+				<div id='question'>
+				</div>
+				
+				<div id='answers'>
+					
+					<a href='#' data-role='button'></a>
+					<a href='#' data-role='button'></a>
+					<a href='#' data-role='button'></a>
+					<a href='#' data-role='button'></a>
+				
+				</div>
+				
+			</div> <!-- /main -->
+				
+		</div>
+		<!-- End of the Game screen -->
+		
+		<!-- The settings page -->
+		<div data-role='page' id='settings'>
+		
+			<a href='#' id='music' data-role='button'>Music: On</a>
+			<a href='#' id='sound' data-role='button'>Sound: On</a>
+			
+		</div>
+		<!-- End of the settings page -->
+		
+		<!-- The Highscore page -->
+		<div data-role='page' id='highscore'>
+		
+		</div>
+		<!-- End of the highscore page -->
+		
+	</body>
+	
+</html>
